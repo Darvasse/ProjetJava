@@ -16,7 +16,7 @@ public class Panel1_View extends LinearLayout {
     public Panel1_View(Context context) {
         super(context);
             LayoutInflater inflater= ((Activity)context).getLayoutInflater();
-            inflater.inflate(R.layout.layout_panl1,this);
+            inflater.inflate(R.layout.layout_panel1,this);
 
             btnGotoPnl2=(Button)findViewById(R.id.btnGotoPnl2);
     }
