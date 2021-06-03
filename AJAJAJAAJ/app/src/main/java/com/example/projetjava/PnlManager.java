@@ -39,6 +39,29 @@ public class PnlManager {
         view1 = new Panel1_View(context);
         view2 = new Panel2_View(context);
         view3 = new Panel3_View(context);
-        
+        refAct = (Activity)context;
+        mdl1.addObserver(view1);
+        mdl2.addObserver(view2);
+        mdl3.addObserver(view3);
+    }
+    public static PnlManager getInstance(Context context){
+        if(instance==null){
+            instance= new PnlManager(context);
+        }
+        return instance;
+    }
+    public void setPnl(int p){
+        if(p==1&&pnl!=1){
+            refAct.setContentView(view1);
+            pnl=1;
+        }
+        if (p==2&&pnl!=2){
+            refAct.setContentView(view2);
+            pnl=2;
+        }
+        if(p==3&&pnl!=3){
+            refAct.setContentView(view3);
+            pnl=3;
+        }
     }
 }

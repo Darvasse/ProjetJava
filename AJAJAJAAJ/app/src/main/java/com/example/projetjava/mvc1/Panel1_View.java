@@ -10,7 +10,7 @@ import com.example.projetjava.R;
 
 public class Panel1_View extends LinearLayout {
     public Panel1_Ctrl refCtrl;
-    public Button btnGoToPnl2;
+    public Button btnGotoPnl2;
 
 
     public Panel1_View(Context context) {
@@ -18,11 +18,11 @@ public class Panel1_View extends LinearLayout {
             LayoutInflater inflater= ((Activity)context).getLayoutInflater();
             inflater.inflate(R.layout.layout_panl1,this);
 
-            btnGoToPnl2=(Button)findViewById(R.id.btnGotoPnl2);
+            btnGotoPnl2=(Button)findViewById(R.id.btnGotoPnl2);
     }
 
     public void setRefCtrl(Panel1_Ctrl c){
         refCtrl=c;
-        btnGoToPnl2.setOnClickListener(refCtrl);
+        btnGotoPnl2.setOnClickListener(refCtrl);
     }
 }
