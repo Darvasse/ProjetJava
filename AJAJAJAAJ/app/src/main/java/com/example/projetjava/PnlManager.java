@@ -1,5 +1,8 @@
 package com.example.projetjava;
 
+import android.app.Activity;
+import android.content.Context;
+
 import com.example.projetjava.mvc1.Panel1_Ctrl;
 import com.example.projetjava.mvc1.Panel1_Mdl;
 import com.example.projetjava.mvc1.Panel1_View;
@@ -22,4 +25,20 @@ public class PnlManager {
     private Panel1_Mdl mdl1;
     private Panel2_Mdl mdl2;
     private Panel3_Mdl mdl3;
+
+    public Activity refAct;
+
+    private  PnlManager(Context context){
+        pnl=-1;
+        ctrl1 = new Panel1_Ctrl();
+        ctrl2 = new Panel2_Ctrl();
+        ctrl3 = new Panel3_Ctrl();
+        mdl1 = new Panel1_Mdl();
+        mdl2 = new Panel2_Mdl();
+        mdl3 = new Panel3_Mdl();
+        view1 = new Panel1_View(context);
+        view2 = new Panel2_View(context);
+        view3 = new Panel3_View(context);
+        
+    }
 }
