@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#555555">
 
     <TextView
         android:id="@+id/apptitle"
@@ -13,10 +14,51 @@
         android:layout_marginLeft="18dp"
         android:layout_marginTop="20dp"
         android:gravity="center|center_horizontal"
-        android:text='Bienvenue  sur "Nourris ton Nico"'
+        android:text="Nourris ton Nico"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGotoPnl2"
+        android:layout_width="179dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="52dp"
+        android:text="Vas voir ton ami"
+        app:backgroundTint="#454545"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGotoPnl3"
+        android:layout_width="188dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="52dp"
+        android:text="Configuration"
+        app:backgroundTint="#454545"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="1076dp"
+        android:layout_height="566dp"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="-333dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Il est ultra beau hein ?)"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="483dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
