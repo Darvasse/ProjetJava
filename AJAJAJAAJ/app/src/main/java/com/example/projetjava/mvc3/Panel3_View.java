@@ -11,16 +11,18 @@ import com.example.projetjava.mvc2.Panel2_Ctrl;
 
 public class Panel3_View extends LinearLayout {
     public Panel3_Ctrl refCtrl;
-    public Button btnGotoPnl3;
+    public Button btnGotoPnl1;
+    public Button btnGotoPnl2;
     public Panel3_View(Context context) {
         super(context);
         LayoutInflater inflater =((Activity)context).getLayoutInflater();
         inflater.inflate(R.layout.layout_panel3,this);
 
-        btnGotoPnl3=(Button)findViewById(R.id.btnGotoPnl3);
+        btnGotoPnl1=(Button)findViewById(R.id.btnGotoPnl1);
+        btnGotoPnl2 = (Button)findViewById(R.id.btnGotoPnl2);
     }
     public void setRefCtrl(Panel3_Ctrl c){
         refCtrl= c;
-        btnGotoPnl3.setOnClickListener(refCtrl);
+        btnGotoPnl1.setOnClickListener(refCtrl);
     }
 }

@@ -1,4 +1,17 @@
 package com.example.projetjava.mvc3;
 
-public class Panel3_Ctrl {
+import android.view.View;
+
+import com.example.projetjava.R;
+
+public class Panel3_Ctrl implements View.OnClickListener {
+    @Override
+    public void onClick(View view){
+        if(view.getId()==R.id.btnGotoPnl2){
+
+        }
+        else if(view.getId()==R.id.btnGotoPnl1){
+
+        }
+    }
 }
