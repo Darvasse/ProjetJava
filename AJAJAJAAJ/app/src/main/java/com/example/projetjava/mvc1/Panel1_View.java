@@ -18,7 +18,7 @@ public class Panel1_View extends LinearLayout {
             LayoutInflater inflater= ((Activity)context).getLayoutInflater();
             inflater.inflate(R.layout.layout_panel1,this);
 
-            btnGotoPnl2=(Button)findViewById(R.id.btnGotoPnl2);
+            btnGotoPnl2=(Button)findViewById(R.id.btnGotoPnl2FromPnl1);
     }
 
     public void setRefCtrl(Panel1_Ctrl c){

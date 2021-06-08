@@ -9,7 +9,7 @@ public class Panel1_Ctrl implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        if(view.getId()== R.id.btnGotoPnl2){
+        if(view.getId()== R.id.btnGotoPnl2FromPnl1){
             /*refPnlManager.setPnl(2);*/
         }
     }
