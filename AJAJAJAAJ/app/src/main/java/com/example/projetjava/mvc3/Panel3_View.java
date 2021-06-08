@@ -18,11 +18,12 @@ public class Panel3_View extends LinearLayout {
         LayoutInflater inflater =((Activity)context).getLayoutInflater();
         inflater.inflate(R.layout.layout_panel3,this);
 
-        btnGotoPnl1=(Button)findViewById(R.id.btnGotoPnl1);
-        btnGotoPnl2 = (Button)findViewById(R.id.btnGotoPnl2FromPnl1);
+        btnGotoPnl1=(Button)findViewById(R.id.btnGotoPnl1FromPnl3);
+        btnGotoPnl2 = (Button)findViewById(R.id.btnGotoPnl2FromPnl3);
     }
     public void setRefCtrl(Panel3_Ctrl c){
         refCtrl= c;
         btnGotoPnl1.setOnClickListener(refCtrl);
+        btnGotoPnl2.setOnClickListener(refCtrl);
     }
 }

@@ -10,13 +10,21 @@ import com.example.projetjava.R;
 
 public class Panel2_View extends LinearLayout {
     public Panel2_Ctrl refCtrl;
-    public Button btnGotoPnl3;
+    public Button btnGotoPnl1FromPnl2;
+    public Button btnGotoPnl3FromPnl2;
 
     public Panel2_View(Context context) {
         super(context);
         LayoutInflater inflater=((Activity)context).getLayoutInflater();
         inflater.inflate(R.layout.layout_panel2,this);
-        btnGotoPnl3 = (Button)findViewById(R.id.btnGotoPnl3FromPnl1);
+
+        btnGotoPnl1FromPnl2=(Button)findViewById(R.id.btnGotoPnl1FromPnl2);
+        btnGotoPnl3FromPnl2 = (Button)findViewById(R.id.btnGotoPnl3FromPnl2);
+    }
+    public void setRefCtrl(Panel2_Ctrl c){
+        refCtrl=c;
+        btnGotoPnl1FromPnl2.setOnClickListener(refCtrl);
+        btnGotoPnl3FromPnl2.setOnClickListener(refCtrl);
     }
 
 }

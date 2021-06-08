@@ -7,10 +7,10 @@ import com.example.projetjava.R;
 public class Panel3_Ctrl implements View.OnClickListener {
     @Override
     public void onClick(View view){
-        if(view.getId()==R.id.btnGotoPnl2FromPnl1){
+        if(view.getId()==R.id.btnGotoPnl2FromPnl3){
 
         }
-        else if(view.getId()==R.id.btnGotoPnl1){
+        else if(view.getId()==R.id.btnGotoPnl1FromPnl3){
 
         }
     }
